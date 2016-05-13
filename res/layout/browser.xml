@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:orientation="vertical"
+        android:weightSum="9" >
+
+        <Button
+            android:id="@+id/bBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_weight="3"
+            android:background="@drawable/ic_rou"
+            android:minHeight="0dp"
+            android:minWidth="0dp" />
+
+        <Button
+            android:id="@+id/bForward"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_weight="3"
+            android:background="@drawable/ic_roun"
+            android:minHeight="0dp"
+            android:minWidth="0dp" />
+
+        <Button
+            android:id="@+id/brefresh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:background="@drawable/ic_refre"
+            android:minHeight="0dp"
+            android:minWidth="0dp" />
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="visible" >
+    </ProgressBar>
+
+    <WebView
+        android:id="@+id/clickBrower"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" >
+    </WebView>
+
+</LinearLayout>

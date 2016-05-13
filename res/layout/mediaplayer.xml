@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="100" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="99.45"
+        android:orientation="vertical" >
+
+        <ListView
+            android:id="@+id/listView1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/selector"
+            android:choiceMode="singleChoice"
+            android:divider="#E0E0E0"
+            android:dividerHeight="0.5dp"
+            android:scrollbarSize="10dp"
+            android:scrollbarThumbVertical="@drawable/custom_scroll_style"
+            android:smoothScrollbar="true" >
+        </ListView>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/ConP"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="#F5F5F5"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:background="#F5F5F5"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/play"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_weight="4"
+                android:background="@drawable/ic_un"
+                android:focusable="false"
+                android:minHeight="0dp"
+                android:minWidth="0dp"
+                android:visibility="visible" >
+            </Button>
+
+            <Button
+                android:id="@+id/pause"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_weight="4"
+                android:background="@drawable/ic_untitled_2"
+                android:focusable="false"
+                android:minHeight="0dp"
+                android:minWidth="0dp"
+                android:visibility="invisible" >
+            </Button>
+
+            <Button
+                android:id="@+id/forward"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="26dp"
+                android:layout_toRightOf="@+id/play"
+                android:layout_weight="4"
+                android:background="@drawable/ic_untitled_3"
+                android:focusable="false"
+                android:minHeight="0dp"
+                android:minWidth="0dp" />
+
+            <Button
+                android:id="@+id/reset"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="26dp"
+                android:layout_toLeftOf="@+id/play"
+                android:layout_weight="4"
+                android:background="@drawable/ic_we"
+                android:focusable="false"
+                android:minHeight="0dp"
+                android:minWidth="0dp" />
+
+            <TextView
+                android:id="@+id/currentDuration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="3dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/totalDuration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="3dp"
+                android:layout_alignParentTop="true"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <SeekBar
+                android:id="@+id/seekBar1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:progressDrawable="@drawable/seekbar_progress"
+                android:thumb="@drawable/bo" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>
